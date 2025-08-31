@@ -1,12 +1,14 @@
-# .gitpod.yml
+image: gitpod/workspace-full
+
 tasks:
-  - name: Setup & Run Tests
+  - name: Install & run tests
     init: |
       npm ci
       npx playwright install --with-deps
     command: |
-      npx playwright test
+      eval "$(gp env -e)"
+      npm run test:parallel
 
-vscode:
-  extensions:
-    - ms-playwright.playwright
+ports:
+  - port: 9222
+    onOpen: ignore
