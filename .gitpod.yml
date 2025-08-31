@@ -1,0 +1,12 @@
+# .gitpod.yml
+tasks:
+  - name: Setup & Run Tests
+    init: |
+      npm ci
+      npx playwright install --with-deps
+    command: |
+      npx playwright test
+
+vscode:
+  extensions:
+    - ms-playwright.playwright
