@@ -1,19 +1,13 @@
-# Playwright Automation – LambdaTest Assignment
+1) Create `.env` with:
+   LT_USERNAME=xxx
+   LT_ACCESS_KEY=xxx
+2) Install deps: `npm install`
+3) Run on LambdaTest (parallel): `npm run cloud`
 
-This repository contains Playwright tests for LambdaTest’s Selenium Playground.
+## Gitpod
+- Click the Gitpod button / open in Gitpod.
+- Ensure Gitpod variables LT_USERNAME / LT_ACCESS_KEY are set in your Gitpod account.
+- The workspace runs `npm run cloud`.
 
-##  Open in Gitpod
-Click below to launch this repo directly in Gitpod:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/KrishnaChetanaPriyanka/LambdaTest-Playwright-101)
-
-##  How to run tests
-
-### In Gitpod (recommended)
-1. Open the repo in Gitpod using the badge above.
-2. Gitpod will automatically:
-   - Install dependencies (`npm ci`)
-   - Install Playwright browsers (`npx playwright install --with-deps`)
-3. Run the tests with:
-   ```bash
-   npx playwright test
+Artifacts (videos, logs, screenshots) appear in the LambdaTest Automation Dashboard.
+Please collect and submit the Test ID(s) from the dashboard.

@@ -1,14 +1,7 @@
-image: gitpod/workspace-full
-
 tasks:
-  - name: Install & run tests
-    init: |
-      npm ci
-      npx playwright install --with-deps
-    command: |
-      eval "$(gp env -e)"
-      npm run test:parallel
-
-ports:
-  - port: 9222
-    onOpen: ignore
+  - name: LambdaTest Playwright
+    init: npm ci
+    command: npm run cloud
+vscode:
+  extensions:
+    - ms-playwright.playwright

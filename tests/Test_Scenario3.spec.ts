@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Simple Form Demo - Validate message', async ({ page }) => {
+test('Input Form Demo - Validate message', async ({ page }) => {
   await page.goto('https://www.lambdatest.com/selenium-playground');
 
   await page.getByRole('link', { name: 'Input Form Submit' }).click();
